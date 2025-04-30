@@ -87,7 +87,8 @@ See [Project Structure](/.doc/project-structure.md)
 
 
 ## Steps to run the project:
-1. Start the containers using Docker Desktop
+**1. Start the containers using Docker Desktop**
+
 Make sure the following containers are running in Docker Desktop:
 
 redis:7.4.1-alpine
@@ -100,12 +101,12 @@ mongo:8.0
 
 You can verify this under the Containers tab in Docker Desktop, as shown in the image you provided.
 
-2. Run the migrations
+**2. Run the migrations**
 Execute the following command in the terminal from the project root (where the .csproj file is located):
 
 dotnet ef database update
 
-3. Configure Visual Studio
+**3. Configure Visual Studio**
 In Visual Studio:
 
 Set the startup project to Ambev.DeveloperEvaluation.WebApi
