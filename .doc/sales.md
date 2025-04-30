@@ -9,7 +9,8 @@
   - `_size` (optional): Number of items per page (default: 10)
   - `_order` (optional): Ordering of results (e.g., "date desc, totalAmount asc")
 - **Response**:
-{
+  ```json
+  {
   "data": [
     {
       "id": "string",
@@ -34,12 +35,12 @@
   "currentPage": "integer",
   "totalPages": "integer"
 }
-
----
+  ```
 
 ### **POST /sales**
 - **Description**: Add a new sale
 - **Request Body**:
+  ```json
 {
   "saleNumber": "string",
   "date": "string",
@@ -53,10 +54,11 @@
     }
   ]
 }
-
+  ```
 
 
 - **Response**:
+  ```json
 {
   "id": "string",
   "saleNumber": "string",
@@ -75,7 +77,7 @@
     }
   ]
 }
-
+  ```
 ---
 
 ### **GET /sales/{id}**
@@ -83,7 +85,7 @@
 - **Path Parameters**:
   - `id`: Sale ID
 - **Response**:
-
+  ```json
 {
   "id": "string",
   "saleNumber": "string",
@@ -102,7 +104,7 @@
     }
   ]
 }
-
+  ```
 
 
 
@@ -113,6 +115,7 @@
 - **Path Parameters**:
   - `id`: Sale ID
 - **Request Body**:
+  ```json
 {
   "saleNumber": "string",
   "date": "string",
@@ -126,8 +129,9 @@
     }
   ]
 }
-
+  ```
 - **Response**:
+  ```json
 {
   "id": "string",
   "saleNumber": "string",
@@ -146,7 +150,7 @@
     }
   ]
 }
-
+  ```
 
 
 
@@ -157,10 +161,11 @@
 - **Path Parameters**:
   - `id`: Sale ID
 - **Response**:
+  ```json
 {
   "message": "Sale successfully cancelled"
 }
-
+  ```
 
 
 
@@ -175,6 +180,7 @@
   - `_size` (optional): Number of items per page (default: 10)
   - `_order` (optional): Ordering of results (e.g., "date desc, totalAmount asc")
 - **Response**:
+  ```json
 {
   "data": [
     {
@@ -190,7 +196,7 @@
   "currentPage": "integer",
   "totalPages": "integer"
 }
-
+  ```
 
 
 ---
@@ -208,4 +214,3 @@
 
 ---
 
-This document provides a clear structure for implementing and documenting the Sales API. Let me know if you need further adjustments or additional details!
