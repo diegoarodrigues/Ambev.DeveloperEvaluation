@@ -84,3 +84,35 @@ This section includes links to the detailed documentation for the different API 
 This section describes the overall structure and organization of the project files and directories. 
 
 See [Project Structure](/.doc/project-structure.md)
+
+
+## Steps to run the project:
+1. Start the containers using Docker Desktop
+Make sure the following containers are running in Docker Desktop:
+
+redis:7.4.1-alpine
+
+postgres:13
+
+ambevdesenvolvedoreva (port: 8080)
+
+mongo:8.0
+
+You can verify this under the Containers tab in Docker Desktop, as shown in the image you provided.
+
+2. Run the migrations
+Execute the following command in the terminal from the project root (where the .csproj file is located):
+
+dotnet ef database update
+
+3. Configure Visual Studio
+In Visual Studio:
+
+Set the startup project to Ambev.DeveloperEvaluation.WebApi
+
+Make sure it's running with IIS Express (as shown in the second image)
+
+The configuration should be set to Debug and CPU to Any CPU
+
+
+See [Sale](/.doc/sales.md)
