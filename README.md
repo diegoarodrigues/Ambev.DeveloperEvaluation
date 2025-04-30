@@ -32,6 +32,7 @@ The configuration should be set to Debug and CPU to Any CPU
 See [Sale](/.doc/sales.md)
 
 Thank you for my participation in the test 
+
 Regards: Diego A. Rodrigues
 
 
