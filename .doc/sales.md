@@ -11,72 +11,72 @@
 - **Response**:
   ```json
   {
-  "data": [
-    {
-      "id": "string",
-      "saleNumber": "string",
-      "date": "string",
-      "customer": "string",
-      "branch": "string",
-      "totalAmount": "number",
-      "isCancelled": "boolean",
-      "items": [
-        {
-          "productId": "string",
-          "quantity": "integer",
-          "unitPrice": "number",
-          "discount": "number",
-          "totalAmount": "number"
-        }
-      ]
-    }
-  ],
-  "totalItems": "integer",
-  "currentPage": "integer",
-  "totalPages": "integer"
-}
+    "data": [
+      {
+        "id": "string",
+        "saleNumber": "string",
+        "date": "string",
+        "customer": "string",
+        "branch": "string",
+        "totalAmount": "number",
+        "isCancelled": "boolean",
+        "items": [
+          {
+            "productId": "string",
+            "quantity": "integer",
+            "unitPrice": "number",
+            "discount": "number",
+            "totalAmount": "number"
+          }
+        ]
+      }
+    ],
+    "totalItems": "integer",
+    "currentPage": "integer",
+    "totalPages": "integer"
+  }
   ```
 
 ### **POST /sales**
 - **Description**: Add a new sale
 - **Request Body**:
   ```json
-{
-  "saleNumber": "string",
-  "date": "string",
-  "customer": "string",
-  "branch": "string",
-  "items": [
-    {
-      "productId": "string",
-      "quantity": "integer",
-      "unitPrice": "number"
-    }
-  ]
-}
+  {
+    "saleNumber": "string",
+    "date": "string",
+    "customer": "string",
+    "branch": "string",
+    "items": [
+      {
+        "productId": "string",
+        "quantity": "integer",
+        "unitPrice": "number"
+      }
+    ]
+  }
   ```
 
 
 - **Response**:
   ```json
-{
-  "id": "string",
-  "saleNumber": "string",
-  "date": "string",
-  "customer": "string",
-  "branch": "string",
-  "totalAmount": "number",
-  "isCancelled": "boolean",
-  "items": [
-    {
-      "productId": "string",
-      "quantity": "integer",
-      "unitPrice": "number",
-      "discount": "number",
-      "totalAmount": "number"
-    }
-  ]
-}
+  {
+    "id": "string",
+    "saleNumber": "string",
+    "date": "string",
+    "customer": "string",
+    "branch": "string",
+    "totalAmount": "number",
+    "isCancelled": "boolean",
+    "items": [
+      {
+        "productId": "string",
+        "quantity": "integer",
+        "unitPrice": "number",
+        "discount": "number",
+        "totalAmount": "number"
+      }
+    ]
+  }
   ```
 ---
 
@@ -86,24 +86,24 @@
   - `id`: Sale ID
 - **Response**:
   ```json
-{
-  "id": "string",
-  "saleNumber": "string",
-  "date": "string",
-  "customer": "string",
-  "branch": "string",
-  "totalAmount": "number",
-  "isCancelled": "boolean",
-  "items": [
-    {
-      "productId": "string",
-      "quantity": "integer",
-      "unitPrice": "number",
-      "discount": "number",
-      "totalAmount": "number"
-    }
-  ]
-}
+  {
+    "id": "string",
+    "saleNumber": "string",
+    "date": "string",
+    "customer": "string",
+    "branch": "string",
+    "totalAmount": "number",
+    "isCancelled": "boolean",
+    "items": [
+      {
+        "productId": "string",
+        "quantity": "integer",
+        "unitPrice": "number",
+        "discount": "number",
+        "totalAmount": "number"
+      }
+    ]
+  }
   ```
 
 
@@ -116,40 +116,40 @@
   - `id`: Sale ID
 - **Request Body**:
   ```json
-{
-  "saleNumber": "string",
-  "date": "string",
-  "customer": "string",
-  "branch": "string",
-  "items": [
-    {
-      "productId": "string",
-      "quantity": "integer",
-      "unitPrice": "number"
-    }
-  ]
-}
+  {
+    "saleNumber": "string",
+    "date": "string",
+    "customer": "string",
+    "branch": "string",
+    "items": [
+      {
+        "productId": "string",
+        "quantity": "integer",
+        "unitPrice": "number"
+      }
+    ]
+  }
   ```
 - **Response**:
   ```json
-{
-  "id": "string",
-  "saleNumber": "string",
-  "date": "string",
-  "customer": "string",
-  "branch": "string",
-  "totalAmount": "number",
-  "isCancelled": "boolean",
-  "items": [
-    {
-      "productId": "string",
-      "quantity": "integer",
-      "unitPrice": "number",
-      "discount": "number",
-      "totalAmount": "number"
-    }
-  ]
-}
+  {
+    "id": "string",
+    "saleNumber": "string",
+    "date": "string",
+    "customer": "string",
+    "branch": "string",
+    "totalAmount": "number",
+    "isCancelled": "boolean",
+    "items": [
+      {
+        "productId": "string",
+        "quantity": "integer",
+        "unitPrice": "number",
+        "discount": "number",
+        "totalAmount": "number"
+      }
+    ]
+  }
   ```
 
 
@@ -162,9 +162,9 @@
   - `id`: Sale ID
 - **Response**:
   ```json
-{
-  "message": "Sale successfully cancelled"
-}
+  {
+    "message": "Sale successfully cancelled"
+  }
   ```
 
 
@@ -181,21 +181,21 @@
   - `_order` (optional): Ordering of results (e.g., "date desc, totalAmount asc")
 - **Response**:
   ```json
-{
-  "data": [
-    {
-      "id": "string",
-      "saleNumber": "string",
-      "date": "string",
-      "branch": "string",
-      "totalAmount": "number",
-      "isCancelled": "boolean"
-    }
-  ],
-  "totalItems": "integer",
-  "currentPage": "integer",
-  "totalPages": "integer"
-}
+  {
+    "data": [
+      {
+        "id": "string",
+        "saleNumber": "string",
+        "date": "string",
+        "branch": "string",
+        "totalAmount": "number",
+        "isCancelled": "boolean"
+      }
+    ],
+    "totalItems": "integer",
+    "currentPage": "integer",
+    "totalPages": "integer"
+  }
   ```
 
 
